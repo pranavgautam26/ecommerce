@@ -20,7 +20,7 @@ export class ShopComponent implements OnInit {
   pageNumber = 1;
   pageSize = 6;
   totalCount: Number;
-  @ViewChild('search', {static: true}) searchTerm: ElementRef;
+  @ViewChild('search', {static: false}) searchTerm: ElementRef;
   sortOptions = [
     {name: 'Alphabetical', value: 'name'},
     {name: 'Price Low to High', value: 'priceAsc'},
